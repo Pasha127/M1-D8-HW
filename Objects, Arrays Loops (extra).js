@@ -76,7 +76,7 @@ let sale = .2;
 let salePrice = preSaleShoppingCart * sale;
 let minimumShippingTotal =50
 let cost = salePrice>minimumShippingTotal? salePrice : (salePrice+10);
-console.log(cost); 
+console.log("The total cost after discount is:", cost); 
 
 /* EXERCISE 8
  Create a variable and assign to it an object representing a car, with properties like brand, model and licensePlate.
