@@ -94,17 +94,36 @@ console.log("Odd values from our array:", oddArray);
  Write a piece of code for removing all the vowels from a string.
 */
 
-/* WRITE YOUR ANSWER HERE */
+let stringExample = "Hello Epicode Class FS0322"
+let noVowelStr = stringExample.replace(/[aeiou]/gi, "");
+console.log("Original string:", stringExample);
+console.log("New string sans vowels:", noVowelStr);
+
 
 /* EXTRA 7
  Write a piece of code for increasing all the numerical values in a array by 1.
 */
-
-/* WRITE YOUR ANSWER HERE */
+console.log("Original array:",testArray02);
+let addedArray = testArray02.map(function(n){
+    return n+1;
+}) ;
+console.log("Old Array +1:", addedArray)
 
 /* EXTRA 8 
  Replace all the strings contained in an array with their length.
  es.: ["strive", "is", "great"] => [6, 2, 5]
 */
+let str = null;
+let sentence = ["I", "love", "motorcycles"];
+let newSentence =[];
+console.log("here is the original sentence:",sentence);
+const letterCounter = (array) =>{
+    array.forEach(element => {
+        str = element.length;
+        //console.log('debug',str);
+        newSentence.push(str);
 
-/* WRITE YOUR ANSWER HERE */
+    });
+}
+letterCounter(sentence);
+console.log("Here is the new sentence:", newSentence);
