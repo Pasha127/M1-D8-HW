@@ -85,21 +85,10 @@ console.log("Even values from our array:", evenArray);
  Write a piece of code for deleting only even entries from an array.
 */
 
-console.log("Our starting array is:", testArray02);
-function isEven(n){
-    if(n%2===0){
-        return true;
-    }else{
-        return false;
-    }
-}
-for(i=testArray02.length;i=0;i--){
-    if(isEven(testArray02[i]) === true){
-        testArray
-        //console.log(evenArray, "debug - array prgress");
-    }
-}
-console.log("Even values from our array:", evenArray);
+let oddArray = testArray.filter(function(value){
+    return value %2 !== 0;
+});
+console.log("Odd values from our array:", oddArray);
 
 /* EXTRA 6
  Write a piece of code for removing all the vowels from a string.
