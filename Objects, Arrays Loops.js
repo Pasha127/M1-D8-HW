@@ -63,12 +63,43 @@ console.log("The min number is:", minNumber);
 */
 
 console.log("Our starting array is:", testArray02);
+let evenArray=[];
+function isEven(n){
+    if(n%2===0){
+        return true;
+    }else{
+        return false;
+    }
+}
+for(i=0;i<testArray02.length;i++){
+    if(isEven(testArray02[i]) === true){
+        evenArray.push(testArray02[i]);
+        //console.log(evenArray, "debug - array prgress");
+    }
+}
+console.log("Even values from our array:", evenArray);
+
+
 
 /* EXTRA 5
  Write a piece of code for deleting only even entries from an array.
 */
 
-/* WRITE YOUR ANSWER HERE */
+console.log("Our starting array is:", testArray02);
+function isEven(n){
+    if(n%2===0){
+        return true;
+    }else{
+        return false;
+    }
+}
+for(i=testArray02.length;i=0;i--){
+    if(isEven(testArray02[i]) === true){
+        testArray
+        //console.log(evenArray, "debug - array prgress");
+    }
+}
+console.log("Even values from our array:", evenArray);
 
 /* EXTRA 6
  Write a piece of code for removing all the vowels from a string.
