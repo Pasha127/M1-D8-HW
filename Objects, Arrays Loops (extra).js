@@ -124,8 +124,13 @@ console.log(carsForRent[0],carsForRent[3]);
 /* EXERCISE 11
  Print to the console the type of the car variable you created before, as well as the types of its licensePlate and brand properties.
 */
+let carType = typeof(car01);
+let licenseType = typeof(car01.licensePlate);
+let brandType = typeof(car01.Make);
+console.log("Car type:", carType);
+console.log("License plate type:", licenseType);
+console.log("Brand type:", brandType);
 
-console.log("The car is an object, the license plate is a string and so is the brand.")
 
 /* EXERCISE 12
  Create a new variable called carsForSale assigning to it an empty array, and then insert 3 cars into it.
