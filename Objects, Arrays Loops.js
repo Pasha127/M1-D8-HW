@@ -19,7 +19,7 @@ let testArray =[0,61,2,35,4,45,63,7,28,9];
 console.log("Our starting array is:", testArray);
 let biggerNumber = null;
 let maxNumber = testArray[0];
-for(i=0;i<testArray.length;i++){
+for(let i=0;i<testArray.length;i++){
     if(testArray[i+1]>testArray[i]){
         biggerNumber=testArray[i+1]
         //console.log("debug - higher");
@@ -43,7 +43,7 @@ let testArray02 =[1,61,2,35,4,0,63,7,28,9];
 console.log("Our starting array is:", testArray02);
 let smallerNumber = null;
 let minNumber = testArray02[0];
-for(i=0;i<testArray02.length;i++){
+for(let i=0;i<testArray02.length;i++){
     if(testArray02[i+1]<testArray02[i]){
         smallerNumber=testArray02[i+1]
         //console.log("debug - lower");
@@ -70,8 +70,8 @@ function isEven(n){
     }else{
         return false;
     }
-}
-for(i=0;i<testArray02.length;i++){
+} 
+for(let i=0;i<testArray02.length;i++){
     if(isEven(testArray02[i]) === true){
         evenArray.push(testArray02[i]);
         //console.log(evenArray, "debug - array prgress");

@@ -158,14 +158,14 @@ console.log(totalCars, "cars total.");
 */
 let objLength = null;
 //3 tries all don't work
-/* for(i=0;i<carsForSale.length;i++){
+/* for(let i=0;i<carsForSale.length;i++){
     console.log(`Car #${i+1} for sale is:`, carsForSale[i]);
     
     objLength = Object.keys(carsForSale[i]).length;
     
     console.log(carsForSale[i],"debug")
     
-    for(j=0;j<objLength;j++){
+    for(let j=0;j<objLength;j++){
 
         console.log(carsForSale[i]);
     }
@@ -174,14 +174,14 @@ let objLength = null;
 }
 console.log();
 
-for(i=0;i<carsForSale.length;i++){
+for(let i=0;i<carsForSale.length;i++){
     console.log(`Car #${i+1} for sale is:`, carsForSale[i]);
     for(let key in carsForSale[i]){
         count++
     }     
     console.log(carsForSale[i],"debug")
     
-    for(j=0;j<objLength;j++){
+    for(let j=0;j<objLength;j++){
 
         console.log(carsForSale[i][j]);
     }
@@ -189,7 +189,7 @@ for(i=0;i<carsForSale.length;i++){
 
 }
 console.log();
-for(i=0;i<carsForSale.length;i++){
+for(let i=0;i<carsForSale.length;i++){
     console.log(carsForSale[i]);
     console.log(`Car #${i+1} for sale is:`);
     console.log(carsForSale[i].Make,carsForSale[i].Model,carsForSale[i].licensePlate); 
